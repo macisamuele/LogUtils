@@ -31,7 +31,7 @@ import android.util.Log;
  * - {@code message} is the message to inject in the log. It can be any kind of object and the message passed to the logging system is {@code message.toString()}
  * - {@code t} is the throwable to print in the log message
  * </p>
- * The calling messageategy implies all the drawbacks of the Android logging system with some additional effort to reach the right calling file and line.
+ * The calling of the provided methods implies all the drawbacks of the Android logging system with some additional effort to reach the right calling file and line.
  *
  * @author Samuele Maci (macisamuele@gmail.com)
  * @see android.util.Log
@@ -43,7 +43,7 @@ public class LogUtils {
     }
 
     /**
-     * @return well formatted messageing with the information of the caller
+     * @return well formatted message with the information of the caller
      */
     @SuppressWarnings("StatementWithEmptyBody")
     private static String addCallerInformation() {

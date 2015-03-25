@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 apply plugin: 'com.android.library'
+apply plugin: 'bintray-release'
 
 android {
     compileSdkVersion 21
@@ -39,3 +40,13 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
+publish {
+    userOrg = 'macisamuele'
+    groupId = 'it.macisamuele'
+    artifactId = 'log-utils'
+    version = '0.0.1'
+    description = 'Wrapper of android.util.log that allows to have well formatted log'
+    website = 'https://github.com/macisamuele/LogUtils'
+    issueTracker = "${website}/issues"
+    repository = "${website}.git"
+}
